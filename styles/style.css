@@ -501,7 +501,7 @@ footer {
 }
 
 footer a {
-  color: #ffffff;
+  color: #fff;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,6 +509,7 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: lighter;
 }
 
 .footer-content {
