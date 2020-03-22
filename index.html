@@ -4,17 +4,229 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>David carbon - Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>David Carbon - Portfolio</title>
   </head>
-  <body>
+  <body class="light">
     <header>
-      <div class="flex-container">
-        <a href="/">
-          <img id="logo" src="assets/david-carbon-logo-blue.svg" alt="logo" />
-          David Carbon
-        </a>
-        <button id="btnResume">Resume</button>
+      <nav>
+        <input id="menu-switch" type="checkbox" />
+        <label id="btn-menu" for="menu-switch"></label>
+        <div class="menu">
+          <div class="flex-container">
+            <div id="choose">
+              <span>Choose</span>
+            </div>
+
+            <ul class="menu-ul">
+              <li class="menu-li">
+                <a href="#experience">
+                  <div class="menu-li-heading">Experience</div>
+                  <div class="menu-li-details">Things I've built</div>
+                </a>
+              </li>
+              <li class="menu-li">
+                <a href="#about">
+                  <div class="menu-li-heading">About</div>
+                  <div class="menu-li-details">Who am I</div>
+                </a>
+              </li>
+              <li class="menu-li">
+                <a href="#contact">
+                  <div class="menu-li-heading">Contact</div>
+                  <div class="menu-li-details">Get in touch</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="header">
+        <div class="flex-container">
+          <a href="/">
+            <img
+              id="logo"
+              src="assets/david-carbon-webdesign-logo.svg"
+              alt="logo"
+            />
+            <span>David Carbon</span>
+          </a>
+
+          <div id="control">
+            <!--<button id="theme-mode">Dark</button> -->
+            <a href="/assets/resume.pdf" target="_blank" id="btn-resume">Resume</a>
+          </div>
+        </div>
       </div>
     </header>
+    <section id="hero">
+      <div class="">
+        <div class="hero-content">
+        
+        <div class="container">
+          <div class="hero-description">
+            <h2>
+              Welcome to my Portfolio. </br>I am David a Front End Developer based in
+              Germany
+            </h2>
+            <a href="#experience">
+              <img class="btn-more" src="assets/angle-arrow-down.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    </section>
+    <section id="experience">
+      <div class="section-content">
+        <div class="section-description">
+          <div class="container">
+            <h2>Experience</h2>
+            These are the projects I've worked on.
+          </div>
+        </div>
+        <div class="exp-carousel">
+          <div class="exp-card">
+            
+          </div>
+          <div class="exp-card">
+            
+          </div>
+          <div class="exp-card">
+            
+          </div>
+          <div class="exp-card">
+            
+          </div>
+          <div class="exp-card">
+            
+          </div>
+          <div class="exp-card">
+            
+          </div>
+          <div class="exp-card">
+            
+          </div>
+          
+        </div>
+        <div class="section-description">
+          <div class="container">
+            If you want to explore some of the projects more just visit their websites.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="section-content">
+        <div class="section-description">
+          <div class="container">
+            <h2>About</h2>
+            You don't know who I am? Lets change that. Here are some information about me.
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="container">
+            <ul class="about-personal">
+              <li>
+                <label>Name</label>
+                <p>David Carbon</p>
+              </li>
+              <li>
+                <label>Age</label>
+                <p>22</p>
+              </li>
+              <li>
+                <label>Hometown</label>
+                <p>Reutlingen, Germany</p>
+              </li>
+              <li>
+                <label>Study</label>
+                <p>Computer Science</p>
+              </li>
+              <li>
+                <label>University</label>
+                <p>Eberhard Karls University Tübingen</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-description">
+          <div class="container">
+            You want to know more about myself? Maybe you find some more information on my socials.
+          </div>
+        </div>  
+      </div>
+    </section>
+    <section id="contact">
+      <div class="section-content">
+        <div class="section-description">
+          <div class="container">
+            <h2>Contact</h2>
+            Hire me as your Developer or ask me something if you have a question. You can contact me via E-mail
+            <span style="text-decoration: underline;">david.carbon@web.de</span> or the following Form.
+          </div>
+        </div>
+        <div class="contact-content">
+          <div class="container">
+            <div class="contact-dropdown">
+              <input type="checkbox" id="contact-dropdown-input" />
+              <label for="contact-dropdown-input" class="contact-dropdown-label"><span>Contact Form</span></label>
+              <div class="contact-dropdown-content">
+                <form class="contact-form">
+                  <input type="text" name="name" id="name" placeholder="Name" />
+                  <input type="email" name="email" id="email" placeholder="E-mail" />
+                  <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" ></textarea>
+                  <input type="submit" value="Send" id="btn-submit">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-description">
+            <div class="container">
+              Or you contact me via Fiverr, LinkedIn etc.
+            </div>
+          </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <div class="flex-container around">
+          <ul class="footer-nav">
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          
+            <ul class="footer-nav">
+              <li>
+                <a href="">LinkedIn</a>
+              </li>
+              <li>
+                <a href="">Fiverr</a>
+              </li>
+              <li>
+                <a href="">Instagram</a>
+              </li>
+              
+            </ul>
+          
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a href="/impressum.html">Impressum</a>
+      </div>
+    </footer>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
