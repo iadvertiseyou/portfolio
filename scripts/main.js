@@ -1,8 +1,13 @@
 window.addEventListener("load", function() {
-  if ("serviceworker" in navigator) {
-    this.navigator.serviceWorker.register("service-worker.js").then(function(){
-      
-    });
+  if ("serviceWorker" in navigator) {
+    this.navigator.serviceWorker
+      .register("service-worker.js")
+      .then(function(registration) {
+        console.log(`Registration successful. Scope: ${registration.scope}`);
+      })
+      .catch(function(e) {
+        console.log(`Service Worker registration failed. Error: ${e}`);
+      });
   }
 });
 
