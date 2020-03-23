@@ -8,9 +8,9 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/assets/icons/icon-72x72.png",
+      "src": "/assets/icons/icon_518x518.png",
       "type": "image/png",
-      "size": "72x72"
+      "size": "518x518"
     }
   ]
 }
