@@ -1,15 +1,13 @@
-window.addEventListener("load", function() {
-  if ("serviceWorker" in navigator) {
-    this.navigator.serviceWorker
-      .register("service-worker.js")
-      .then(function(registration) {
-        console.log(`Registration successful. Scope: ${registration.scope}`);
-      })
-      .catch(function(e) {
-        console.log(`Service Worker registration failed. Error: ${e}`);
-      });
-  }
-});
+if ("serviceWorker" in navigator) {
+  this.navigator.serviceWorker
+    .register("/sw.js")
+    .then(function(registration) {
+      console.log(`Registration successful. Scope: ${registration.scope}`);
+    })
+    .catch(function(e) {
+      console.log(`Service Worker registration failed. Error: ${e}`);
+    });
+}
 
 const header = document.querySelector(".header");
 const sectionContent = document.querySelectorAll(".section-content");
