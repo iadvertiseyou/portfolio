@@ -1,12 +1,12 @@
 const staticCacheName = "staticCache";
 const staticAssets = [
-  "/",
-  "/index.html",
-  "/scripts/main.js",
-  "/styles/style.css",
-  "/assets/david-carbon-webdesign-logo.svg",
-  "/assets/bg.jpg",
-  "/assets/angle-arrow-down.svg",
+  "/portfolio/",
+  "/portfolio/index.html",
+  "/portfolio/scripts/main.js",
+  "/portfolio/styles/style.css",
+  "/portfolio/assets/david-carbon-webdesign-logo.svg",
+  "/portfolio/assets/bg.jpg",
+  "/portfolio/assets/angle-arrow-down.svg",
   "https://fonts.googleapis.com/css?family=Dosis:300,500,800&display=swap"
 ];
 
