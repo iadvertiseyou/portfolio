@@ -1,7 +1,7 @@
 {
   "name": "David Carbon Portfolio",
   "short_name": "Portfolio",
-  "start_url": "/index.html",
+  "start_url": "/portfolio/index.html",
   "display": "standalone",
   "background_color": "#f7f7f7",
   "theme_color": "#005af0",
